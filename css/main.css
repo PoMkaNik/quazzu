@@ -76,6 +76,11 @@
   background-color: #6a1b9a !important;
 }
 
+.btn-extend {
+  display: block;
+  width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
   .section-about img {
     margin-top: 1rem;

@@ -68,6 +68,61 @@
   </header>
 
   <!-- section Signup -->
+  <section class="section-signup">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <h4>Get free account</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, recusandae perspiciatis cumque praesentium
+            officia possimus laudantium accusamus repellat doloribus doloremque.</p>
+          <h4>Download free software</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, recusandae perspiciatis cumque praesentium
+            officia possimus laudantium accusamus repellat doloribus doloremque.</p>
+          <h4>Push to platform</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, recusandae perspiciatis cumque praesentium
+            officia possimus laudantium accusamus repellat doloribus doloremque.</p>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
+            <form>
+              <div class="input-field">
+                <input type="text" id="first-name" name="first-name">
+                <label for="first-name">First Name</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="last-name" name="last-name">
+                <label for="last-name">Last Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" name="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" id="password" name="password">
+                <label for="password">Password</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="company" name="company">
+                <label for="company">Company</label>
+              </div>
+              <div class="input-field">
+                <select name="role" id="role">
+                  <option value="" disabled selected>Select Role</option>
+                  <option value="professional">Professional Developer</option>
+                  <option value="hobbyist">Hobbyist</option>
+                  <option value="student">Student</option>
+                  <option value="manager">Manager</option>
+                  <option value="manager">Other</option>
+                </select>
+                <label for="role">Role</label>
+              </div>
+              <input type="submit" class="btn btn-large purple btn-extend" value="Sign Up">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- footer -->
@@ -147,6 +202,9 @@
 
       // tabs init
       $('.tabs').tabs();
+
+      // select form init
+      $('select').formSelect();
 
       // carousel init
       $('.carousel.carousel-slider').carousel({
