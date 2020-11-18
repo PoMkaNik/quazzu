@@ -25,6 +25,10 @@
   font-weight: bold;
 }
 
+.section-about img {
+  margin-top: 4rem;
+}
+
 .section-developers {
   position: relative;
   background: url('../img/code.jpg');
@@ -32,5 +36,38 @@
   background-position: center;
   border-top: 5px solid #333;
   border-bottom: 5px solid #333;
-  min-height: 180px;
+  min-height: 160px;
+}
+
+.section-podcast {
+  position: relative;
+  background: url('../img/circuit.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+  min-height: 160px;
+}
+
+.section-podcast .primary-overlay {
+  background: rgba(112, 81, 176, 0.9);
+}
+.section-podcast a {
+  margin-top: 30px;
+}
+
+.carousel-item p {
+  font-size: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-about img {
+    margin-top: 1rem;
+  }
+
+  .section-developers,
+  .section-podcast {
+    min-height: 240px;
+    text-align: center;
+  }
 }

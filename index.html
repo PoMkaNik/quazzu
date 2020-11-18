@@ -104,7 +104,7 @@
   <!-- section About -->
   <section class="section section-about grey lighten-4">
     <div class="container">
-      <div class="row valign-wrapper">
+      <div class="row">
         <div class="col s12 m6">
           <h3><span class="deep-purple-text text-darken-1">About </span>Us</h3>
           <p class="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat hic commodi veniam
@@ -161,6 +161,72 @@
     </div>
   </section>
 
+  <!-- section Podcast -->
+  <section class="section section-podcast white-text">
+    <div class="primary-overlay valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8">
+            <h4>Listen to the Quazzu Podcast</h4>
+            <p>Every Thursday at 5pm EST</p>
+          </div>
+          <div class="col s12 m4 center">
+            <a href="#" class="btn btn-large purple">
+              <i class="fa fa-podcast"></i> Listen
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section Testimonials -->
+  <section class="section section-testimonial grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="carousel carousel-slider center">
+            <div class="carousel-item" href="#one!">
+              <h2>Testimonial One</h2>
+              <p class="flow-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo saepe a tenetur harum aut dolor
+                reprehenderit, eaque vel doloribus magni! Aut vero quae sequi dignissimos illum ipsa neque aliquam
+                cupiditate!"
+              </p>
+              <p><em>- John Doe from Microsystems</em></p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#two!">
+              <h2>Testimonial Two</h2>
+              <p class="flow-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo saepe a tenetur harum aut dolor
+                reprehenderit, eaque vel doloribus magni! Aut vero quae sequi dignissimos illum ipsa neque aliquam
+                cupiditate!"
+              </p>
+              <p><em>- Mike Smith from Edge INC</em></p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+              <h2>Testimonial Three</h2>
+              <p class="flow-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo saepe a tenetur harum aut dolor
+                reprehenderit, eaque vel doloribus magni! Aut vero quae sequi dignissimos illum ipsa neque aliquam
+                cupiditate!"
+              </p>
+              <p><em>- Caren Williams from Tehson</em></p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--jQuery-->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -174,6 +240,11 @@
       // Custom JS & jQuery
       // sidenav init
       $('.sidenav').sidenav();
+
+      // carousel init
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+      });
     });
   </script>
 </body>
